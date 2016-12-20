@@ -25,7 +25,7 @@
 						var grade = item[j].Grade
 						var serviceinfo = item[j].Serviceinfo
 						var website = item[j].Website
-			    	    $("#attractionrow"+i).append('<th><div><h3>'+name+'</h3></div><div><a Target="_new" href="'+website+'"><img src="'+picture+'" height="200" width="200"></a></div><p>地址：</p><p style="font-weight:normal">'+add+'</p><p>聯絡方式：</p><p style="font-weight:normal">'+tel+'</p><p>星等：</p><p style="font-weight:normal">'+grade+'</p></th>');
+			    	    $("#attractionrow"+i).append('<th><div><h3>'+name+'</h3></div><div><a Target="_new" href="'+website+'"><img src="'+picture+'" class="img-responsive" height="400" width="400"></a></div><p>地址：</p><p style="font-weight:normal">'+add+'</p><p>聯絡方式：</p><p style="font-weight:normal">'+tel+'</p><p>星等：</p><p style="font-weight:normal">'+grade+'</p></th>');
 				}
 			}
 		    },
@@ -44,12 +44,13 @@
     <body>
 	<h1 align="center">飯 店 資 訊</h1>
 	<P align="center"><strong>(TIP ： 點擊圖片可以前往該飯店官網唷!!^__^)</P>
-	<table border="1" id="attraction" align="center">
-	    <tr id = "attractionrow">
+	<div  class="table-responsive">
+	<table border="1" id="attraction" align="center" class="table">
+	    <tr id = "attractionrow" >
 	        <!--td id = "attractioncol"></td-->
 	    </tr>
 
-
+		</div>
 	<!--div id="attraction"></div-->
     </body>
 </html>
